@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1024445419471",
+    "project_id": "jobcombat-745c9",
+    "storage_bucket": "jobcombat-745c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024445419471:android:fa4788977c0fb9e5628cba",
+        "android_client_info": {
+          "package_name": "com.example.jobcombat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024445419471-ss23u1suats4d6pp5fc1f9vdtbidj4dn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe0cV9hnauPxZXw6Xchp5G5ysn3I5HqiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024445419471-ss23u1suats4d6pp5fc1f9vdtbidj4dn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

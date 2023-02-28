@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -30,6 +31,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+
+
+
+
 }
 
 dependencies {
@@ -47,5 +53,14 @@ dependencies {
     //for image source from link
     implementation 'com.github.bumptech.glide:glide:4.15.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
+    // Circular Image Design
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Firebase
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth:21.0.3'
 
 }
+
+
+
