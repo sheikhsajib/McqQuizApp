@@ -1,15 +1,15 @@
 package com.example.jobcombat;
 
-public class UserTable {
+public class User {
 
     private String name, email, pass, referCode;
 
-    public UserTable() {
+    public User() {
 
 
     }
 
-    public UserTable(String name, String email, String pass, String referCode) {
+    public User(String name, String email, String pass, String referCode) {
         this.name = name;
         this.email = email;
         this.pass = pass;

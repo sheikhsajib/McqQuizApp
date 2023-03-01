@@ -42,7 +42,7 @@ public class SignupActivity extends AppCompatActivity {
             name = binding.nameBox.getText().toString();
             referCode = binding.referBox.getText().toString();
 
-            UserTable userTable = new UserTable(email, pass, name, referCode);
+            final User user = new User(email, pass, name, referCode);
 
 
         auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -54,7 +54,7 @@ public class SignupActivity extends AppCompatActivity {
                     database
                             .collection("userTable")
                             .document(uid)
-                            .set(userTable).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            .set(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()){
