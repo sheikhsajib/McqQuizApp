@@ -1,14 +1,10 @@
 package com.example.jobcombat;
 
 public class User {
-
-    private String name, email, pass, referCode;
+    private String name, email, pass,profile, referCode;
     private long coins = 25;
 
-
     public User() {
-
-
     }
 
     public User(String name, String email, String pass, String referCode) {
@@ -56,5 +52,13 @@ public class User {
 
     public void setCoins(long coins) {
         this.coins = coins;
+    }
+
+    public String getProfile() {
+        return profile;
+    }
+
+    public void setProfile(String profile) {
+        this.profile = profile;
     }
 }

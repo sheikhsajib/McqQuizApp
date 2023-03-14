@@ -101,13 +101,13 @@
         android:text="Share"
         android:textColor="@color/color_white"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/restratBtn"
+        app:layout_constraintEnd_toStartOf="@+id/restartBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/earnedCoins" />
 
     <Button
-        android:id="@+id/restratBtn"
+        android:id="@+id/restartBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
