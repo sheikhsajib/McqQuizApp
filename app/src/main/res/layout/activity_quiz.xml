@@ -89,11 +89,12 @@
         app:srcCompat="@drawable/audiencepoll" />
 
     <TextView
-        android:id="@+id/question_1"
+        android:id="@+id/option1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/option_unselected"
+        android:onClick="onClick"
         android:padding="15dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="@+id/view5"
@@ -101,58 +102,60 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
-        android:id="@+id/question_2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/option_right"
-        android:padding="15dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/question_1"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/question_1"
-        app:layout_constraintTop_toBottomOf="@+id/question_1" />
-
-    <TextView
-        android:id="@+id/question_3"
+        android:id="@+id/option2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/option_unselected"
+        android:onClick="onClick"
         android:padding="15dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/question_2"
-        app:layout_constraintStart_toStartOf="@+id/question_2"
-        app:layout_constraintTop_toBottomOf="@+id/question_2" />
+        app:layout_constraintEnd_toEndOf="@+id/option1"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/option1"
+        app:layout_constraintTop_toBottomOf="@+id/option1" />
 
     <TextView
-        android:id="@+id/question_4"
+        android:id="@+id/option3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@drawable/option_wrong"
+        android:background="@drawable/option_unselected"
+        android:onClick="onClick"
         android:padding="15dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/question_3"
-        app:layout_constraintStart_toStartOf="@+id/question_3"
-        app:layout_constraintTop_toBottomOf="@+id/question_3" />
+        app:layout_constraintEnd_toEndOf="@+id/option2"
+        app:layout_constraintStart_toStartOf="@+id/option2"
+        app:layout_constraintTop_toBottomOf="@+id/option2" />
+
+    <TextView
+        android:id="@+id/option4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/option_unselected"
+        android:onClick="onClick"
+        android:padding="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/option3"
+        app:layout_constraintStart_toStartOf="@+id/option3"
+        app:layout_constraintTop_toBottomOf="@+id/option3" />
 
     <Button
         android:id="@+id/nextBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
         android:background="@drawable/button_2"
+        android:onClick="onClick"
         android:text="Next"
         android:textColor="@color/color_white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/quitBtn"
-        app:layout_constraintTop_toBottomOf="@+id/question_4" />
+        app:layout_constraintTop_toBottomOf="@+id/option4" />
 
     <Button
         android:id="@+id/quitBtn"
@@ -169,5 +172,5 @@
         app:layout_constraintEnd_toStartOf="@+id/nextBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question_4" />
+        app:layout_constraintTop_toBottomOf="@+id/option4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
